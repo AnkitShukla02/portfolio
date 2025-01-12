@@ -1,0 +1,53 @@
+.featureItems{
+    padding: 40px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    .icon{
+        svg{
+            font-size: 60px;
+            color: #ff014f;
+        }
+    }
+}
+
+.projectItems{
+    padding: 30px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    .img-box{
+        border-radius: 8px;
+        overflow: hidden;
+        img{
+            transition: all .2S linear;
+        }
+    }
+
+    .projectDetails{
+        h4{
+            transition: all .2s linear;
+            cursor: pointer;
+            .arrowIcon{
+                visibility: hidden;
+            transition: all .2s linear;
+            display: inline-block;
+
+            }
+        }
+ 
+        h4:hover{
+            color: #ff014f;
+           
+            .arrowIcon{
+                visibility: visible;
+            }
+        }
+    }
+
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+}
